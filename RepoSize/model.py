@@ -1,7 +1,7 @@
 import argparse
 
 #Making use of the argparse parser.
-parser =argparse.ArgumentParser()
+parser =argparse.ArgumentParser(prog="reposize",description="Find the size of the specifed Github repository.",epilog="Thanks for using %(prog)s!")
 
 '''
 What we want to design is a CLI that takes in commands in a myriad of ways.
@@ -12,8 +12,7 @@ We should also allow users to query private repos. In which context they'll need
 the private subcommand which comes with a switch allowing for the 
 addition of a authentication token. 
 
-We should also detail how a user may get an authentication token.
-
+We should also detail how a user may get an authentication token in a help section that can be activated when the file alone is used.
 '''
 
 #Adding a subcommand
