@@ -1,5 +1,6 @@
 import argparse
 
+#Making use of the argparse parser.
 parser =argparse.ArgumentParser()
 
 '''
@@ -15,6 +16,7 @@ We should also detail how a user may get an authentication token.
 
 '''
 
+#Adding a subcommand
 parser.add_argument("repository")
 parser.add_argument("-r","--repo",action="store_true")
 
