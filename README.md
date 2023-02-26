@@ -7,8 +7,6 @@ This can be important in data constrained environments (like a case in which a u
 
 # Make sure you're using python version 3.6
 
-# Currently only works for public repositories.
-
 ## Installation
 
 ```console
