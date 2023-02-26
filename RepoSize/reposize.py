@@ -2,7 +2,7 @@ import requests
 import model
 
 def requester(request):
-
+    
     response = requests.get(
         "https://api.github.com/repos/"+str(request)
     )
