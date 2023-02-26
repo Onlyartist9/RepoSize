@@ -2,7 +2,7 @@ import requests
 import model
 
 def requester(request):
-    
+
     response = requests.get(
         "https://api.github.com/repos/"+str(request)
     )
@@ -14,10 +14,12 @@ def requester(request):
 def displayer(size):
     if size >= 1000:
         sizeinMB = size/1000
-        print(f"The repository's size is {sizeinMB} MB",)
+        print(f"The repository's size is {sizeinMB} MB")
     elif size >= 10**6:
         sizeinGB = size/10**6
-        print("The repository's size is {sizeinGB} GB",)
+        print(f"The repository's size is {sizeinGB} GB")
+    else:
+        print(f"The repository's size is {size} KB")
 
 reporequest = model.target_repo
 
