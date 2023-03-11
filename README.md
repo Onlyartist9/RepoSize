@@ -5,7 +5,7 @@ The main reason I am creating this tool is due to the fact that I realized it's 
 
 This can be important in data constrained environments (like a case in which a user has a data use limit) and needs to pull a repository. Finding out the size of repository can save costs before pulling a repo.
 
-# Make sure you're using python version 3.6
+# Make sure you're using python version 3.6 or above.
 
 ## Installation
 
