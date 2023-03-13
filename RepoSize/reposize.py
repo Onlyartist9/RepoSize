@@ -1,3 +1,4 @@
+import sys
 import requests
 import model
 
@@ -8,7 +9,15 @@ def requester(request):
     )
   
     json_response = response.json()
-    size = json_response['size']
+    try:
+        size = json_response['size']
+        if not size:
+            raise KeyError("Missing Repo")
+    except KeyError as e:
+        print(e)
+        print("Please enter a valid(make sure it exists and check typos) Github repository in the form <user>/<repository>")
+        sys.exit(1)
+
     return size
 
 def displayer(size):
