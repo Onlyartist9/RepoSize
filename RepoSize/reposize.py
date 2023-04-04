@@ -24,8 +24,8 @@ def displayer(size):
     if size >= 1000:
         sizeinMB = size/1000
         print(f"The repository's size is {sizeinMB} MB")
-    elif size >= 10**6:
-        sizeinGB = size/10**6
+    elif size >= 1000000:
+        sizeinGB = size/1000000
         print(f"The repository's size is {sizeinGB} GB")
     else:
         print(f"The repository's size is {size} KB")
