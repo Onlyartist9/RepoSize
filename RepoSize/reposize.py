@@ -7,7 +7,7 @@ def requester(request):
     response = requests.get(
         "https://api.github.com/repos/"+str(request)
     )
-  
+    
     json_response = response.json()
     try:
         size = json_response['size']
